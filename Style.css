@@ -1,9 +1,97 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .bg-image {
+    height: 100%;
 
-h1 {
-    color: #59a5bd;
-    font-size: 2em;
-    font-family: Verdana, Geneva, sans-serif;
-}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img1 { background-image: url("BTS5.jpg"); }
+  .img2 { background-image: url("BTS2.jpg"); }
+  .img3 { background-image: url("BTS3.jpg"); }
+  .img4 { background-image: url("BTS4.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    font-family:'Archivo Black', sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .overlay {
+    height: 4%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 120px;
+    /* background-color: #f1f1f1; */
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    width: 100%;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  
+  .overlay a {
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    transition: 0.5s;
+    padding: 2px 150px;
+    text-decoration: none;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    z-index: 2;
+    top: 5px;
+    left: 15px;
+    color:#000000;
+    font-size: 20px;
+  }
