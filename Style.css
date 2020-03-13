@@ -6,6 +6,7 @@ body, html {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(212, 163, 245, 0.2));
     background-attachment:fixed;
     padding-bottom: 20px;
+    scroll-behavior: smooth;
   }
   /* rgba(185,207,212,0.3) */
 
@@ -33,6 +34,10 @@ header li a {
   color: black;
   text-decoration: none;
   text-align: center;
+}
+
+a:hover {
+  color: #EF798A;
 }
 
 a.current:link, a.current:visited {
@@ -76,11 +81,17 @@ a.current:link, a.current:visited {
   position: relative;
   display:inline-block;
   margin: 20px;
-  left: 5%;
-  top: 5%;
+  /* left: 5%;
+  top: 5%; */
   z-index: 2;
   background-color: #f1f1f1;
+}
+
+.cardContainer {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 90px;
 }
 
 .card:hover {
@@ -103,3 +114,30 @@ img {
   color:#9e9e9e;
   text-align: center;
 }
+
+.cardContainer .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box-container{
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+}
+
+.box-container .left-box {
+margin: 10px;
+position: relative;
+background-color: #858585;
+}
+
+.box-container .right-box {
+  margin: 10px;
+  background-color: #858585;
+  border-radius: 5px;
+  }
