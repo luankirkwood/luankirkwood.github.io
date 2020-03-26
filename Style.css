@@ -141,3 +141,9 @@ background-color: #858585;
   background-color: #858585;
   border-radius: 5px;
   }
+
+  button {
+    background-color: #EF798A;
+    margin-top: 200px;
+    margin-left: 50px;
+  }
