@@ -4,7 +4,7 @@ body, html {
    font-family: 'Oswald', sans-serif;
    padding-bottom: 20px;
    scroll-behavior: smooth;
-   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(243, 225, 255, 0.2));
+   background-color: #f8f6f6;
    background-attachment: fixed;
  }
 
@@ -16,7 +16,7 @@ body, html {
    background-color:#FFFFFF;
    z-index:9;
    white-space: nowrap;
-   box-shadow: 0 0 25px 0 black;
+   box-shadow: 0 0 15px 0 #00000082;
  }
  
  a.nav-image img {

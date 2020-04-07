@@ -4,8 +4,6 @@ body, html {
     font-family: 'Oswald', sans-serif;
     padding-bottom: 20px;
     scroll-behavior: smooth;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(212, 163, 245, 0.2));
-    background-attachment: fixed;
   }
 
   #navigation {
@@ -17,7 +15,7 @@ body, html {
     z-index:9;
     white-space: nowrap;
     display: none;
-    box-shadow: 0 0 25px 0 black;
+    box-shadow: 0 0 15px 0 #00000082;
   }
   
   a.nav-image img {
@@ -80,13 +78,13 @@ body, html {
   }
 
   #section3 {
-    height: 600px;
+    height: 50%;
     background-color: #dddddd;
     padding-top: 40px;
   }
 
   #section4 {
-    height: 400px;
+    height: 30%;
     background-color: #cfcfcf;
     padding-top: 40px;
   }
