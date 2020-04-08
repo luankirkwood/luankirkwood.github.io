@@ -6,7 +6,7 @@ $(document).ready(function() {
  
     $('#videos a').click(function() {
        var data = $(this).attr('data');
-       $('#loader').append('<iframe src="https://www.youtube.com/embed/'+data+'" frameborder="0" allowfullscreen></iframe>');
+       $('#loader').append('<iframe src="https://www.youtube.com/embed/'+data+'" frameborder="0" allowfullscreen width="200" height="340"></iframe>');
        $('#overlay').fadeIn(250);
     });
  

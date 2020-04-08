@@ -30,15 +30,17 @@
          data-period="2000"
          data-rotate='[ "Dark & Wild", "Skool Luv Affair", "The Most Beautiful Moment in Life, Pt. 1", "The Most Beautiful Moment in Life, Pt. 2", "Map of the Soul: 7" ]'></span>
     </h1>
-    <h2>Here are my favourite songs from BTS' discography</h2>
+    <h2>You will learn to love the BigHit Enertainment sound<br><br><br></h2>
  </div>
 
 <div id="videos">
     <a data="BVwAVbKYYeM"></a>
-    <a data="bagj78IQ3l0"></a>
+    <a data="rdLkxbjK9aM"></a>
     <a data="vGbuUFRdYqU"></a>
     <a data="NMdTd9e-LEI"></a>
+    <a data="ALj5MKjy2BU"></a>
  </div>
+
  
  <div id="overlay">
     <div class="modal">
@@ -49,24 +51,3 @@
  <script src="https://code.jquery.com/jquery-latest.js"></script>
 
  <script src="music.js"></script>
-
- <script>
-     $(document).ready(function() {
-   $('#videos a').each(function() {
-      var data = $(this).attr('data');
-      $(this).append('<img src="http://img.youtube.com/vi/'+data+'/maxresdefault.jpg" />');
-   });
-
-   $('#videos a').click(function() {
-      var data = $(this).attr('data');
-      $('#loader').append('<iframe src="https://www.youtube.com/embed/'+data+'" frameborder="1" height="500" allowfullscreen></iframe>');
-      $('#overlay').fadeIn(250);
-   });
-
-   $('#close').click(function() {
-      $('#overlay').fadeOut(250,function() {
-         $('#loader').html('');
-      });
-   });
-});
- </script>
