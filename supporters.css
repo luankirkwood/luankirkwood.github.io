@@ -43,39 +43,21 @@ body, html {
     text-decoration: none;
   }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 300px;
-    /* border-radius: 5px; */
-    position: relative;
-    display:inline-block;
-    margin: 20px;
-    z-index: 2;
-    background-color: #f1f1f1;
+  h1,h2 {
+    font-weight: 200;
   }
-  
-  .cardContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 90px;
+  h1 {
+     font-size: 3.5em;
+     color: #333;
+    }
+ 
+  h2 {
+    color: #888;
+    font-size: 2em;
   }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-
-  .cardContainer .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+ 
+  #supporters-title {
+     margin-top: 120px;
+     margin-left: 50px;
+     line-height: 120%;
   }

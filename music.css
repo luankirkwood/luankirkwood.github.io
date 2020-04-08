@@ -38,7 +38,7 @@ body, html {
    color: #EF798A;
  }
  
- a.current:link, a.current:visited {
+ a#current:link, a#current:visited {
    color: #bebebe;
    text-decoration: none;
  }
